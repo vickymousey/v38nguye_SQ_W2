@@ -20,6 +20,7 @@ let player = {
   vy: 0,
 
   r: 24,
+  facing: 1, // 1 = right, -1 = left
 
   // Movement tuning — change these to adjust how the game feels
   speed: 0.5,
@@ -74,9 +75,11 @@ function handleInput() {
   // --- Horizontal movement ---
   if (keyIsDown(LEFT_ARROW) || keyIsDown(65)) {
     player.vx -= currentSpeed;
+    player.facing = -1; // face left
   }
   if (keyIsDown(RIGHT_ARROW) || keyIsDown(68)) {
     player.vx += currentSpeed;
+    player.facing = 1; // face right
   }
 
   player.vx = constrain(player.vx, -currentMax, currentMax);
@@ -166,7 +169,10 @@ function drawPlayer() {
   imageMode(CENTER);
   let size = player.r * 2;
 
-  image(playerImg, player.x, player.y, size, size);
+  translate(player.x, player.y);
+
+  scale(player.facing, 1);
+  image(playerImg, 0, 0, size, size);
 
   pop();
 }
