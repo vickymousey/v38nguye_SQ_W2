@@ -1,6 +1,8 @@
+let playerImg;
+
 let player = {
-  x: 200, // horizontal position (centre of blob)
-  y: 100, // vertical position (centre of blob)
+  x: 200,
+  y: 100,
 
   vx: 0, // horizontal velocity — how fast we're moving left/right
   vy: 0, // vertical velocity — how fast we're moving up/down
@@ -13,8 +15,12 @@ let player = {
   jumpForce: -12, // upward velocity applied when jumping (negative = upward)
   friction: 0.8, // horizontal slowdown when no key is pressed (0–1, lower = more friction)
 
-  onGround: false, // tracks whether the player is standing on something
+  onGround: false,
 };
+
+function preload() {
+  playerImg = loadImage("madeline.jpg");
+}
 
 const GRAVITY = 0.6;
 
@@ -31,11 +37,9 @@ function setup() {
 function handleInput() {
   // --- Horizontal movement ---
   if (keyIsDown(LEFT_ARROW) || keyIsDown(65)) {
-    // LEFT or A
     player.vx -= player.speed;
   }
   if (keyIsDown(RIGHT_ARROW) || keyIsDown(68)) {
-    // RIGHT or D
     player.vx += player.speed;
   }
 
@@ -136,22 +140,12 @@ function drawPlayer() {
   pop(); // restore drawing settings
 }
 
-// ------------------------------------------------------------
-// drawFloor()
-// A simple rectangle across the bottom of the canvas.
-// ------------------------------------------------------------
 function drawFloor() {
   fill(40, 120, 110); // dark teal
   noStroke();
   rect(0, floorY, width, height - floorY);
 }
 
-// ------------------------------------------------------------
-// drawHUD()
-// HUD = Heads Up Display.
-// Shows controls on screen so the player always knows
-// how to interact without needing external instructions.
-// ------------------------------------------------------------
 function drawHUD() {
   fill(180);
   noStroke();
