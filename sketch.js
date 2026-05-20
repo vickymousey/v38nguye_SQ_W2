@@ -1,6 +1,5 @@
 let playerImg;
 let bgVid;
-let platformImg;
 
 let platforms = [
   // { x, y, w, h }
@@ -34,7 +33,6 @@ let player = {
 
 function preload() {
   playerImg = loadImage("assets/madeline.jpg");
-  platformImg = loadImage("assets/coolplatform.png");
   bgVid = createVideo("assets/coolbg.mp4");
   bgVid.hide();
 }

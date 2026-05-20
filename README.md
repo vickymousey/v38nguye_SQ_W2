@@ -4,14 +4,22 @@
 
 To run the sketch locally, open `index.html` in Google Chrome. No additional setup is required.
 
+**Controls:**
+
+- Move left/right: Arrow Keys or A/D
+- Jump: Up Arrow or W
+- Fall off the screen to reset to the start
+
+**Opening the Chrome Console**
+
+- **Windows:** Press `F12` or `Ctrl + Shift + J`, then click the **Console** tab
+
 ## Assets
 
-| `assets\cool dolphin.jpg` [1] | https://pin.it/6Oi6yTmWP |
-| `assets\cool door.png` [2] | https://www.pngegg.com/en/png-yzruf |
-| `assets\cool pointer.png` [3] | https://pngimg.com/image/92623 |
+| `assets\madeline.jpg` [1] | https://pin.it/68Pu6Sdgt |
+| `assets\coolbg.mp4` [2] | https://pin.it/68A66FMeN |
 
 ## References
 
-[1] Pinterest. 2025. Aero Ftutiger Dolphins. Retrieved from https://pin.it/6Oi6yTmWP.
-[2] PNG EGG. 2026. Door Window Wood The Home Depot Furniture, wooden doors, angle, interior Design Services png. Retrieved from https://www.pngegg.com/en/png-yzruf.
-[3] PNG IMG. 2026. Red Arrow PNG Size. Retrieved from https://pngimg.com/image/92623.
+[1] Pinterest. 2026. Madeline Agrees. Retrieved from https://pin.it/68Pu6Sdgt.
+[2] Pinterest. 2026. Untitled. Retrieved from https://pin.it/68A66FMeN.
