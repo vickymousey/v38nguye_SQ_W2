@@ -16,8 +16,10 @@ To run the sketch locally, open `index.html` in Google Chrome. No additional set
 
 ## Assets
 
+| File                      | Source                   |
+| ------------------------- | ------------------------ |
 | `assets\madeline.jpg` [1] | https://pin.it/68Pu6Sdgt |
-| `assets\coolbg.mp4` [2] | https://pin.it/68A66FMeN |
+| `assets\coolbg.mp4` [2]   | https://pin.it/68A66FMeN |
 
 ## References
 
